@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugin-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "pnpm run build --watch --ignore-watch examples",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "example:vue3": "cd examples/vite-vue3 && pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "typescript": "^5.4.2",
+    "vite": "*"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "picocolors": "^1.0.0",
+    "progress": "^2.0.3",
+    "rd": "^2.0.1",
+    "tsup": "6.0.1"
+  }
+}
